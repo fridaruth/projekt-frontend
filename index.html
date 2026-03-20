@@ -3,8 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt</title>
+    <title>Vibe-Caster</title>
+    <script type="module" src="/src/js/main.js"></script>
+    <link rel="stylesheet" href="/src/scss/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <main class="app-container">
+      <header>
+        <h1>Vibe-Caster</h1>
+        <div class="search-box">
+          <label for="city-input">Skriv en stad:</label>
+          <input type="text" id="city-input" placeholder="Search a city... maybe Tokyo or New York">
+          <button id="search-vibe-btn">Find the vibe</button>
+        </div>
+      </header>
+
+      <section id="weather-section" class="display-area">
+        <p id="greeting-text">Choose a city to find the right vibe for your weather </p>
+      </section>
+      <div id="map"></div>
+
+      <section id="music-section" class="display-area">
+        <div id="music-link"></div>
+      </section>
+
+    </main>
+
   </body>
 </html>

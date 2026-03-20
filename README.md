@@ -11,8 +11,10 @@
 **Dynamiskt tema** Bakgrundsfärger och animationer ändras baserat på väder.
 
 ## 🛠️ API:er
-** [OpenWeatherMap](https://openweathermap.org/) (Väderdata)
-  * [Leaflet](https://leafletjs.com/) (Kartor)
-  * [Deezer API](https://developers.deezer.com/) (Musik)
+* [OpenWeatherMap](https://openweathermap.org/) (Väderdata)
+* [Leaflet](https://leafletjs.com/) (Kartor)
+* [Deezer API](https://developers.deezer.com/) (Musik)
 
-  ## 🔗 https://vibe-caster.netlify.app/
+## 🔗 https://vibe-caster.netlify.app/
+
+### [**Läs hela projektrapporten här (PDF)**](./Rapport_Frida_Pihlstrom.pdf)

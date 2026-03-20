@@ -1,0 +1,30 @@
+
+.animate-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes rain {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+}
+
+.rain-drop {
+    position: fixed;
+    width: 2px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.4);
+    top: -20px;
+    z-index: 0;
+    pointer-events: none;
+    animation: rain linear infinite;
+}

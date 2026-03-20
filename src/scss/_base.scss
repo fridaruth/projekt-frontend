@@ -16,20 +16,6 @@ body {
     color: $text;
 }
 
-.animate-in {
-    animation: fadeIn 0.8s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 h1, h2, h3 {
     font-family: "Rubik Bubbles", sans-serif;

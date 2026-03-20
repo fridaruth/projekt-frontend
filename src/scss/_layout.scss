@@ -107,4 +107,30 @@ button {
         margin-bottom: 10px;
         color: white;
     }
-};
+
+    .track-item {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        min-width: 260px;
+        max-width: 400px;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 8px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        color: white;
+        text-align: left;
+
+        .track-title {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .track-artist {
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+    }
+}

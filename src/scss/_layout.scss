@@ -1,0 +1,110 @@
+@use "sass:color";
+@use "base" as *;
+
+.app-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 1.5s ease-in-out;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    gap: 12px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    flex-direction: column;
+
+    label {
+        display:none;
+    }
+
+    input {
+        flex: 1;
+        padding: 14px 18px;
+        border-radius: 20px;
+        border: 1px solid $glass-border;
+        background: $glass;
+        color: white;
+        font-size: 0.90rem;
+        text-align: center;
+
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    
+    }
+}
+
+button {
+    padding: 14px 20px;
+    min-width: fit-content;
+    max-width: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: none;
+    background: #ffffff;
+    color: #1a1a2e;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.temp {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+#map {
+    height: 40vh;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.music-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 22px;
+    text-align: center;
+    border: 1px solid $glass-border;
+
+    iframe {
+        width: 100%;
+        border-radius: 18px;
+    }
+}
+
+.track-preview {
+    margin-top: 15px;
+
+    h4 { 
+        font-size: 0.8rem;
+        opacity: 0.7;
+        margin-bottom: 10px;
+        color: white;
+    }
+};

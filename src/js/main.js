@@ -209,6 +209,9 @@ function getMusicVibe(condition, temp) {
     return "global top hits 2026";
     }
 
+    /**
+     * Startar applikationen och sätter upp eventlyssnare
+     */
 function initApp() {
     initMap();
     updateVibe("Sundsvall");
